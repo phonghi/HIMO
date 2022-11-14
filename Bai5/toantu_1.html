@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // x=10;
+        // let y = (x++) + 2 + (++x);
+        // alert(x+''+y);
+        // B1: y = (x++) + 2; > B1.1: y = x + 2 = 12; B1.2: x = x + 1 = 11;
+        // B2: y = y + (++x); > B2.1: x = x + 1 = 12; B2.2: y = y + x = 24;
+    </script>
+    <script>
+        x = 10;
+        let y = (++x) + 2 + (x++);
+        document.write(x+''+y);
+    </script>
+</body>
+</html>

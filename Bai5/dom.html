@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="st1">
+    <input type="text" id="st2">
+    <button type="button" onclick="tinhtong()">Tính Tổng</button>
+    <button type="button" onclick="tinhhieu()">Tính Hiệu</button>
+    <button type="button" onclick="tinhnhan()">Tính Nhân</button>
+    <button type="button" onclick="tinhchia()">Tính Chia</button>
+    <p id="kq"></p>
+    <script>
+        function tinhtong() {
+            let n1 = +document.getElementById('st1').value
+            let n2 = +document.getElementById('st2').value 
+            document.getElementById('kq').innerHTML = n1+n2
+        }
+        function tinhhieu() {
+            let n1 = +document.getElementById('st1').value
+            let n2 = +document.getElementById('st2').value 
+            document.getElementById('kq').innerHTML = n1-n2
+        }
+        function tinhnhan() {
+            let n1 = +document.getElementById('st1').value
+            let n2 = +document.getElementById('st2').value 
+            document.getElementById('kq').innerHTML = n1*n2
+        }
+        function tinhchia() {
+            let n1 = +document.getElementById('st1').value
+            let n2 = +document.getElementById('st2').value 
+            document.getElementById('kq').innerHTML = n1/n2
+        }
+    </script>
+</body>
+</html>
