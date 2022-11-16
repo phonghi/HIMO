@@ -12,7 +12,7 @@
     <button onclick="inpp('(')">(</button>
     <button onclick="inpp(')')">)</button>
     <button onclick="inpp('%')">%</button>
-    <button onclick="inpp('AC')">AC</button>
+    <button onclick="ac()">AC</button>
     <br>
     <button onclick="inpp(7)">7</button>
     <button onclick="inpp(8)">8</button>
@@ -35,11 +35,14 @@
     <button onclick="inpp('+')">+</button>
     <script>
         function inpp(x) {
-            document.getElementById('src').value += x
+            document.getElementById('scr').value += x
         }
         function tinh() {
-            let pheptinh = document.getElementById('src').value;
-            document.getElementById('src').value = eval(pheptinh);
+            let pheptinh = document.getElementById('scr').value;
+            document.getElementById('scr').value = eval(pheptinh);
+        }
+        function ac() {
+            document.getElementById('scr').value = '';
         }
     </script>
 </body>
