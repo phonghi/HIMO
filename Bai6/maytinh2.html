@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="scr">
+    <br>
+    <button onclick="inpp('(')">(</button>
+    <button onclick="inpp(')')">)</button>
+    <button onclick="inpp('%')">%</button>
+    <button onclick="inpp('AC')">AC</button>
+    <br>
+    <button onclick="inpp(7)">7</button>
+    <button onclick="inpp(8)">8</button>
+    <button onclick="inpp(9)">9</button>
+    <button onclick="inpp('/')">/</button>
+    <br>
+    <button onclick="inpp(4)">4</button>
+    <button onclick="inpp(5)">5</button>
+    <button onclick="inpp(6)">6</button>
+    <button onclick="inpp('*')">*</button>
+    <br>
+    <button onclick="inpp(1)">1</button>
+    <button onclick="inpp(2)">2</button>
+    <button onclick="inpp(3)">3</button>
+    <button onclick="inpp('-')">-</button>
+    <br>
+    <button onclick="inpp(0)">0</button>
+    <button onclick="inpp('.')">.</button>
+    <button onclick="tinh()">=</button>
+    <button onclick="inpp('+')">+</button>
+    <script>
+        function inpp(x) {
+            document.getElementById('src').value += x
+        }
+        function tinh() {
+            let pheptinh = document.getElementById('src').value;
+            document.getElementById('src').value = eval(pheptinh);
+        }
+    </script>
+</body>
+</html>
